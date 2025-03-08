@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DDDDDD"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Cập nhật NOTES"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="#0000FF" />
+
+    <EditText
+        android:id="@+id/edtTextName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="40dp"
+        android:inputType="text"
+        android:padding="10dp"
+        android:hint="Nhập tên notes"
+        android:background="@drawable/border" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCapNhat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="35dp"
+            android:text="Cập nhật"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="@drawable/border"
+            android:backgroundTint="#00FF00"/>
+
+        <Button
+            android:id="@+id/btnHuy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:layout_weight="1"
+            android:text="Hủy"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="@drawable/border"
+            android:backgroundTint="#FF0000"/>
+    </LinearLayout>
+</LinearLayout>
